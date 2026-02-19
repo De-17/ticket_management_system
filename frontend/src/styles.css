@@ -1,0 +1,178 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #102033;
+  background-color: #f3f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d8e0eb;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.grid-form label,
+.row label,
+.status-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.grid-form {
+  display: grid;
+  gap: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #b8c6d9;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+button {
+  background: #0d5fcc;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ticket-list {
+  display: grid;
+  gap: 10px;
+}
+
+.ticket-card {
+  border: 1px solid #d8e0eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.ticket-header h3 {
+  margin: 0;
+}
+
+.ticket-header small {
+  color: #55657a;
+}
+
+.meta {
+  color: #2d4058;
+}
+
+.status-control {
+  max-width: 220px;
+}
+
+.info-text {
+  color: #2f567e;
+}
+
+.error-text {
+  color: #ad1b1b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.stat-card,
+.stat-breakdown {
+  border: 1px solid #d8e0eb;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.stat-card p {
+  margin: 0;
+  color: #54657a;
+}
+
+.stat-card h3 {
+  margin: 6px 0 0;
+}
+
+.stat-breakdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-breakdown li {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

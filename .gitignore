@@ -1,6 +1,13 @@
+.env
 __pycache__/
 *.pyc
-db.sqlite3
-.env
-venv/
-.env.*
+*.pyo
+*.pyd
+.Python
+*.sqlite3
+.DS_Store
+node_modules/
+dist/
+build/
+coverage/
+postgres_data/
